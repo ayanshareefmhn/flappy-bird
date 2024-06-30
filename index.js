@@ -54,8 +54,8 @@ function generateObstacle(){
         topObstacle.style.left = obstacleLeft + 'px'
         if (obstacleLeft === -60){
             clearInterval(timerId)
-            game.removeChild('obstacle')
-            game.removeChild('topObstacle')
+            game.removeChild(obstacle)
+            game.removeChild(topObstacle)
         }
         if(
             obstacleLeft > 200 && obstacleLeft < 280 && birdLeft === 220 && (birdBottom < obstacleBottom + 153 || birdBottom > obstacleBottom + gap -200  ) || 
