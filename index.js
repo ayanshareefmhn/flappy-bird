@@ -72,8 +72,6 @@ generateObstacle()
 
 function gameOver(){
     clearInterval(gameTimerId)
- const gameOver = document.querySelector('.gameover')
-    gameOver.style.visibility = 'visible'
     console.log('game over')
     isGameOver = true
     document.removeEventListener('keyup', control)
