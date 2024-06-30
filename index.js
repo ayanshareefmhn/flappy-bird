@@ -75,5 +75,4 @@ function gameOver(){
     console.log('game over')
     isGameOver = true
     document.removeEventListener('keyup', control)
-    
 }
